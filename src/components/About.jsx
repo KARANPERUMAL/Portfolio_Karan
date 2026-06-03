@@ -1,6 +1,8 @@
+import React from "react";
+
 function About() {
   return (
-    <section className="about section-shell">
+    <section className="about section-shell" id="about">
       <div className="about-image">
         <img src="/profile.png" alt="Karan P sitting portrait" />
       </div>
@@ -12,7 +14,8 @@ function About() {
 
         <p>
           I am a B.Tech Information Technology student from Batlagundu,
-          Dindigul, Tamil Nadu.
+          Dindigul, Tamil Nadu. I enjoy building secure backend systems,
+          integrating databases, and shaping clear frontend experiences.
         </p>
 
         <p>

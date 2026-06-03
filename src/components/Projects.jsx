@@ -1,8 +1,9 @@
-import projects from "../data/projects";
+import React from "react";
+import projects from "../data/projects.js";
 
 function Projects() {
   return (
-    <section className="projects" id="project">
+    <section className="projects" id="projects">
       <div className="section-shell">
         <h2>
           My <strong>Projects</strong>

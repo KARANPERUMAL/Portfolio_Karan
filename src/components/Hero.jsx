@@ -1,3 +1,5 @@
+import React from "react";
+
 function Hero() {
   const email = "karanperumaln@gmail.com";
   const mailto = `mailto:${email}?subject=${encodeURIComponent(
@@ -21,11 +23,34 @@ function Hero() {
           JWT and Spring Security.
         </p>
 
-        <div className="social-row">
-          <a href="https://github.com/KARANPERUMAL">GH</a>
-          <a href="https://www.linkedin.com/in/karan-perumal">IN</a>
-          <a href="https://leetcode.com/u/KARANPERUMAL/">LC</a>
-          <a href={mailto}>@</a>
+        <div className="social-row" aria-label="Social links">
+          <a
+            href="https://github.com/KARANPERUMAL"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub profile"
+          >
+            GH
+          </a>
+          <a
+            href="https://www.linkedin.com/in/karan-perumal"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LinkedIn profile"
+          >
+            IN
+          </a>
+          <a
+            href="https://leetcode.com/u/KARANPERUMAL/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LeetCode profile"
+          >
+            LC
+          </a>
+          <a href={mailto} aria-label="Email Karan">
+            @
+          </a>
         </div>
       </div>
 

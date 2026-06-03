@@ -1,4 +1,5 @@
-import certifications from "../data/certifications";
+import React from "react";
+import certifications from "../data/certifications.js";
 
 function Certifications() {
   return (

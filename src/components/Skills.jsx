@@ -1,4 +1,5 @@
-import skills from "../data/skills";
+import React from "react";
+import skills from "../data/skills.js";
 
 function Skills() {
   return (

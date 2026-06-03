@@ -1,8 +1,9 @@
-import experiences from "../data/experiences";
+import React from "react";
+import experiences from "../data/experiences.js";
 
 function Experience() {
   return (
-    <section className="experience" id="about">
+    <section className="experience" id="experience">
       <div className="section-shell">
         <h2>
           My <strong>Experience</strong>
@@ -17,9 +18,7 @@ function Experience() {
               key={item.role}
             >
               <div className="experience-head">
-                <span className="company-dot">
-                  {item.company.charAt(0)}
-                </span>
+                <span className="company-dot">{item.company.charAt(0)}</span>
 
                 <h3>{item.role}</h3>
 
