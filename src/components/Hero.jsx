@@ -1,11 +1,34 @@
 import React from "react";
+import { FaEnvelope, FaGithub, FaLinkedinIn } from "react-icons/fa6";
+import { SiLeetcode } from "react-icons/si";
+
+const socialLinks = [
+  {
+    label: "GitHub profile",
+    href: "https://github.com/KARANPERUMAL",
+    external: true,
+    icon: FaGithub,
+  },
+  {
+    label: "LinkedIn profile",
+    href: "https://www.linkedin.com/in/karan-perumal",
+    external: true,
+    icon: FaLinkedinIn,
+  },
+  {
+    label: "LeetCode profile",
+    href: "https://leetcode.com/u/KARANPERUMAL/",
+    external: true,
+    icon: SiLeetcode,
+  },
+  {
+    label: "Email Karan",
+    href: "mailto:karanperumaln@gmail.com?subject=Portfolio%20enquiry",
+    icon: FaEnvelope,
+  },
+];
 
 function Hero() {
-  const email = "karanperumaln@gmail.com";
-  const mailto = `mailto:${email}?subject=${encodeURIComponent(
-    "Portfolio enquiry"
-  )}`;
-
   return (
     <section className="hero section-shell" id="home">
       <div className="hero-copy">
@@ -24,38 +47,22 @@ function Hero() {
         </p>
 
         <div className="social-row" aria-label="Social links">
-          <a
-            href="https://github.com/KARANPERUMAL"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="GitHub profile"
-          >
-            GH
-          </a>
-          <a
-            href="https://www.linkedin.com/in/karan-perumal"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="LinkedIn profile"
-          >
-            IN
-          </a>
-          <a
-            href="https://leetcode.com/u/KARANPERUMAL/"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="LeetCode profile"
-          >
-            LC
-          </a>
-          <a href={mailto} aria-label="Email Karan">
-            @
-          </a>
+          {socialLinks.map(({ href, label, external, icon: Icon }) => (
+            <a
+              href={href}
+              key={label}
+              target={external ? "_blank" : undefined}
+              rel={external ? "noreferrer" : undefined}
+              aria-label={label}
+            >
+              <Icon aria-hidden="true" />
+            </a>
+          ))}
         </div>
       </div>
 
       <div className="hero-art">
-        <img src="/profile.png" alt="Karan P" />
+        <img src="/karan_image_cutout.png" alt="Karan P" />
         <div className="desk-line" />
       </div>
     </section>
