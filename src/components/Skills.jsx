@@ -1,24 +1,24 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa6";
+import { FaJava } from "react-icons/fa";
+import { TbApi } from "react-icons/tb";
 import {
   SiFigma,
   SiJavascript,
   SiMysql,
-  SiOpenjdk,
   SiPostman,
   SiReact,
   SiSpringboot,
   SiSqlite,
 } from "react-icons/si";
-import { FiCode } from "react-icons/fi";
 import skills from "../data/skills.js";
 
 const skillIcons = {
-  Java: SiOpenjdk,
+  Java: FaJava,
   JavaScript: SiJavascript,
   React: SiReact,
   "Spring Boot": SiSpringboot,
-  "REST APIs": FiCode,
+  "REST APIs": TbApi,
   MySQL: SiMysql,
   SQLite: SiSqlite,
   Postman: SiPostman,

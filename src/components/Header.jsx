@@ -18,7 +18,7 @@ function Header() {
 
       <a className="resume-button" href="/karan-resume.pdf" download>
         Resume
-        <span aria-hidden="true">v</span>
+        <span aria-hidden="true"></span>
       </a>
     </header>
   );

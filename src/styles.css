@@ -137,8 +137,8 @@ nav a:focus-visible::after {
   grid-template-columns: minmax(0, 1fr) minmax(340px, 0.88fr);
   gap: 50px;
   align-items: center;
-  min-height: 640px;
-  padding: 48px 0 58px;
+  min-height: 500px;
+  padding: 40px 0 10px;
 }
 
 .hero h1,
@@ -214,8 +214,11 @@ nav a:focus-visible::after {
 .desk-line {
   position: absolute;
   width: min(100%, 410px);
-  left: 50%;
-  transform: translateX(-50%);
+  
+  
+  transform: translateX(50%);
+  transform: translateY(-40px);
+
   margin-top: 1px;
   bottom: 0;
   height: 3px;
@@ -259,7 +262,7 @@ nav a:focus-visible::after {
 }
 
 .skills {
-  padding: 80px 0 110px;
+  padding: 10px 0 50px;
 }
 
 .skills h2,
@@ -315,7 +318,7 @@ nav a:focus-visible::after {
 
 .experience,
 .projects {
-  padding: 90px 0;
+  padding: 40px 0 50px;
   background: var(--black);
   color: var(--white);
 }
@@ -378,7 +381,7 @@ nav a:focus-visible::after {
   grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
   gap: 70px;
   align-items: center;
-  padding: 95px 0;
+  padding: 50px 0;
 }
 
 .about-image {
@@ -539,6 +542,7 @@ footer span:last-child {
 
   .site-header {
     padding: 14px;
+
   }
 
   .brand span:last-child {
