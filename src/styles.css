@@ -208,17 +208,18 @@ nav a:focus-visible::after {
   max-height: 560px;
   object-fit: contain;
   object-position: center bottom;
-  transform: translateY(-8px);
+  transform: translateY(-40px);
 }
 
 .desk-line {
   position: absolute;
-  z-index: 0;
-  right: 0;
-  bottom: 42px;
-  left: 14%;
+  width: min(100%, 410px);
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 1px;
+  bottom: 0;
   height: 3px;
-  background: var(--black);
+  background: black;
 }
 
 .social-row {

@@ -62,7 +62,7 @@ function Hero() {
       </div>
 
       <div className="hero-art">
-        <img src="/karan_image_cutout.png" alt="Karan P" />
+        <img src="/Karan_image2.png" alt="Karan P" />
         <div className="desk-line" />
       </div>
     </section>
