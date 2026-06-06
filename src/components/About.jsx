@@ -4,7 +4,7 @@ function About() {
   return (
     <section className="about section-shell" id="about">
       <div className="about-image">
-        <img src="/karan_image_cutout.png" alt="Karan P sitting portrait" />
+        <img src="/Karan_image2.png" alt="Karan P sitting portrait" />
       </div>
 
       <div className="about-copy">
