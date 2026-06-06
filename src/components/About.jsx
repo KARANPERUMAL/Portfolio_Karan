@@ -4,7 +4,16 @@ function About() {
   return (
     <section className="about section-shell" id="about">
       <div className="about-image">
-        <img src="/Karan_image2.png" alt="Karan P sitting portrait" />
+        <div className="hanging-frame">
+        <div className="rope left"></div>
+        <div className="rope right"></div>
+
+        <div className="frame"> 
+          <img 
+            src="/Karan_image2.png" 
+            alt="Karan P sitting portrait" />
+        </div>
+      </div>
       </div>
 
       <div className="about-copy">
