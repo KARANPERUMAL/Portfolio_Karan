@@ -93,31 +93,6 @@ textarea {
   border-radius: 4px;
 }
 
-/* Ropes */
-
-.rope {
-  position: absolute;
-  width: 3px;
-  background: #8b6b3f;
-  z-index: -1;
-}
-
-.rope.left {
-  height: 85px;
-  top: -78px;
-  left: 70px;
-  transform: rotate(28deg);
-  transform-origin: bottom;
-}
-
-.rope.right {
-  height: 85px;
-  top: -78px;
-  right: 70px;
-  transform: rotate(-28deg);
-  transform-origin: bottom;
-}
-
 /* Hook */
 
 .hanging-frame::before {

@@ -5,8 +5,6 @@ function About() {
     <section className="about section-shell" id="about">
       <div className="about-image">
         <div className="hanging-frame">
-        <div className="rope left"></div>
-        <div className="rope right"></div>
 
         <div className="frame"> 
           <img 
